@@ -110,5 +110,5 @@ def build_network(config, channels, num_classes, anchors, num_layers):
 
 
 def build_model(cfg, num_classes, device):
-    model = Model(cfg, channels=3, num_classes=num_classes, anchors=cfg.model.head.anchors).to(device)
+    model = Model(cfg, channels=1, num_classes=num_classes, anchors=cfg.model.head.anchors).to(device)
     return model
